@@ -32,7 +32,7 @@ CLIENT_ID = "74cc9e66-7826-4cb4-8525-4c4833e2c794"
 CLIENT_SECRET = os.getenv("CLIENT_SECRET")
 TENANT_ID = "61390730-9db3-4485-9c33-f87ed2dd9df3"
 PORT = int(os.environ.get('PORT', 9000))
-REDIRECT_URI = f"http://localhost:{PORT}/callback"
+REDIRECT_URI = f"https://sendmail2-cayj.onrender.com/callback"
 # REDIRECT_URI = f"https://8d6e-106-222-213-67.ngrok-free.app:{PORT}/callback"
 
 
@@ -83,7 +83,7 @@ socketio = SocketIO(app, cors_allowed_origins="*")
 
 # Add your BASE_URL configuration (update with your actual domain/ngrok URL)
 # BASE_URL = "http://localhost:9000"  # Update this with your actual domain or ngrok URL
-BASE_URL =  "https://a31a-2401-4900-8821-dad7-3d1e-864e-454a-65e0.ngrok-free.app"
+BASE_URL =  "https://sendmail2-cayj.onrender.com"
 # Database initialization function
 def init_tracking_db():
     """Initialize tracking database with indexes"""
